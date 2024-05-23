@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:dice_roll/styled_text.dart';
 
 class DiceRoller extends StatefulWidget {
   const DiceRoller({super.key});
@@ -33,13 +34,9 @@ class _DiceRollerState extends State<DiceRoller> {
           onPressed: rollDice,
           //onHover: darken()
           style: TextButton.styleFrom(
-            padding: const EdgeInsets.all(30),
-            foregroundColor: Colors.white,
-            textStyle: const TextStyle(
-              fontSize: 28,
-            ),
+            padding: const EdgeInsets.all(80),
           ),
-          child: const Text("Roll"),
+          child: const StyledText("Roll"),
         ),
       ],
     );

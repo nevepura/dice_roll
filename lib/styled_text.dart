@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class StyledText extends StatelessWidget {
   const StyledText(
     String text, {
-    this.textColor = Colors.black,
+    this.textColor = const Color.fromARGB(255, 179, 53, 44),
     super.key,
   }) : outputText = text;
 
@@ -16,7 +16,8 @@ class StyledText extends StatelessWidget {
       outputText,
       style: TextStyle(
         color: textColor,
-        fontSize: 28,
+        fontSize: 100,
+        fontFamily: 'Drip',
       ),
     );
   }
